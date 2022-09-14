@@ -1,0 +1,31 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+    char a[50];
+    cin.getline(a,50);
+    int alp,digit,splch;
+    int i=0;
+    alp=0,digit=0,splch=0;
+    while(a[i]!='\0')
+    {
+        if(a[i]>='a' && a[i]<='z' || a[i]>='A' && a[i]<='Z' )
+        {
+            alp++;
+        }
+        else if(a[i]>='0' && a[i]<='9')
+        {
+            digit++;
+        }
+        else
+        {
+            splch++;
+        }
+        i++;
+    }
+    cout<<alp<<endl;
+    cout<<digit<<endl;
+    cout<<splch<<endl;
+}
