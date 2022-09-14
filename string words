@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    char a[40];
+   cin. getline(a,40);
+    int  wrd=1;
+    int i =0;
+    while(a[i]!=0)
+    {
+    if(a[i]==' ' )
+    {
+     
+        wrd++;
+    }
+    i++;
+    }
+    cout<<wrd;
+    return 0;
+    
+}
