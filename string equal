@@ -1,0 +1,49 @@
+#include<iostream>
+ 
+ using namespace std;
+ 
+ int main()
+ {
+     char a[40];
+     char b[40];
+     cin>>a;
+     cin>>b;
+     char flag;
+      int i=0;
+      int j=0;
+     while(a[i]!='\0')
+     
+     {
+         i++;
+     }
+     while(b[j]!='\0')
+     {
+         j++;
+     }
+     if(i!=j)
+     {
+      flag=0;
+      }
+     else
+     {
+     
+     for(i=0, j=0;a[i]!='\0',b[j]!='\0';i++,j++)
+      {
+         if(a[i]==b[j])
+         {
+             flag=1;
+         }
+     }
+     }
+     if(flag==0)
+     {
+         cout<<"strings are  not equal";
+     }
+     else
+     {
+         cout<<"strings are equal";
+     }
+     
+      return 0;
+     
+ }
